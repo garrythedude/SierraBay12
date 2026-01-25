@@ -13,6 +13,7 @@
 	initial_restricted_waypoints = list(
 		"Charon" = list("nav_hangar_calypso"),
 		"Guppy" = list("nav_hangar_guppy"),
+		"Phaethon" = list("nav_hangar_phaethon"),
 		"Crucian" = list("nav_hangar_crucian"),
 		"Cyclopes" = list("nav_merc_dock"), //maps/antag_spawn/mercenary/mercenary.dm shuttle
 		"Mule" = list("nav_merchant_out"), //../mods/maps/liberia/_map_liberia.dme shuttle,
@@ -52,6 +53,11 @@
 		"nav_deck4_guppy",
 		"nav_deck1_salvage",
 		"nav_bridge_guppy",
+		"nav_deck1_phaethon",
+		"nav_deck2_phaethon",
+		"nav_deck3_phaethon",
+		"nav_deck4_phaethon",
+		"nav_bridge_phaethon",
 		"nav_hangar_aquila",
 		"nav_deck1_aquila",
 		"nav_deck2_aquila",
@@ -79,6 +85,16 @@
 	vessel_size = SHIP_SIZE_TINY
 	skill_needed = SKILL_BASIC //was trained
 
+/obj/overmap/visitable/ship/landable/phaethon
+	name = "Phaethon"
+	shuttle = "Phaethon"
+	max_speed = 1/(3 SECONDS)
+	burn_delay = 0.4 SECONDS
+	vessel_mass = 350
+	fore_dir = WEST
+	vessel_size = SHIP_SIZE_TINY
+	skill_needed = SKILL_BASIC
+
 /obj/overmap/visitable/ship/landable/crucian
 	name = "Crucian"
 	shuttle = "Crucian"
@@ -98,6 +114,11 @@
 	name = "guppy control console"
 	shuttle_tag = "Guppy"
 	req_access = list(access_guppy_helm)
+
+/obj/machinery/computer/shuttle_control/explore/phaethon
+	name = "phaethon control console"
+	shuttle_tag = "Phaethon"
+	req_access = list(access_sec_doors)
 
 /obj/machinery/computer/shuttle_control/explore/crucian
 	name = "crucian control console"
