@@ -78,7 +78,7 @@ maps\random_ruins\exoplanet_ruins\playablecolony\playablecolony.dm
 
 Shegar - основной код
 UEDHighCommand - текстовка, помощь с тестами
-Garry Flint - Alliance Frontier extention (map, sprites, code)
+Garry Flint - Alliance Frontier extention
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
